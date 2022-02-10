@@ -1,0 +1,40 @@
+{
+    "code-runner.runInTerminal": true,
+    "kite.showWelcomeNotificationOnStartup": false,
+    "C_Cpp.updateChannel": "Insiders",
+    "jupyter.askForKernelRestart": false,
+    "editor.quickSuggestions": true,
+    "editor.parameterHints.enabled": true,
+    "[jsonc]": {
+
+        "editor.quickSuggestions": {
+            "strings": true
+        },
+        "editor.suggest.insertMode": "replace"
+    },
+    "workbench.editorAssociations": {
+        "*.ipynb": "jupyter.notebook.ipynb",
+        "*.csv": "gc-excelviewer-csv-editor"
+    },
+    "jupyter.jupyterServerType": "local",
+    "liveServer.settings.CustomBrowser": "microsoft-edge",
+    "python.pythonPath": "C:\\Users\\Lenovo\\anaconda3\\envs\\tensorflow\\python.exe",
+    "python.defaultInterpreterPath": "C:\\Users\\Lenovo\\anaconda3\\envs\\tensorflow\\python.exe",
+    "workbench.editor.untitled.hint": "hidden",  
+    "python.linting.flake8Enabled": true,
+    "python.linting.enabled": true,
+    "python.linting.flake8Path": "C:\\Windows\\System32\\wsl$\\Ubuntu\\home\\uyugander\\.local\\bin\\flake8",
+    "python.sortImports.args": [
+        "-rc",
+        "--atomic"
+    ],
+    "editor.codeActionsOnSave": {
+        "source.organizeImports": true
+    },
+    "python.formatting.provider": "black",
+    "python.formatting.blackPath": "C:\\Windows\\System32\\wsl$\\Ubuntu\\home\\uyugander\\.local\\bin\\black",
+    "python.formatting.blackArgs": [
+        "--line-length",
+        "79"
+    ]
+}
