@@ -10,9 +10,9 @@ The following techniques have been used:
 
 ## Installation:
 ### Prerequisites:
-Prerequisite dependencies are stored in `deploy/conda/linux_cpu/py39.yml`. To setup the conda environment:
+Prerequisite dependencies are stored in `deploy/conda/env.yml`. To setup the conda environment:
 
-`$ conda env create --file deploy/conda/linux_cpu_py39.yml`
+`$ conda env create --file deploy/conda/env.yml`
 
 `$ conda activate mle-dev`
 
