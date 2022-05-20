@@ -1,42 +1,50 @@
-# Median housing value prediction
+### Median housing value prediction problem ###
 
-The housing data can be downloaded from https://raw.githubusercontent.com/ageron/handson-ml/master/. The script has codes to download the data. We have modelled the median house value on given housing data. 
+# Project Description
+In this module, we have ingested, trained and validated the housing dataset with the following ML Models:-
+1-> Linear Regression
+2-> Decision Tree Regression Model
+3-> Random Forest Model :: Fine Tuned Model with GridSearch
 
-The following techniques have been used: 
+# Conda Environment Setup
+To setup conda environment, do the following steps:-
+1-> Open Anaconda Powershell Prompt
+2-> go to the project root directory
+3-> type  conda env create --file env.yml
+4-> Now activate the conda environment with conda activate command
 
- - Linear regression
- - Decision Tree
- - Random Forest
+# Package Installation [Ubuntu]:
+Run the following commands in the root directory to setup the packages:-
 
-## Installation:
-### Prerequisites:
-Prerequisite dependencies are stored in `deploy/conda/env.yml`. To setup the conda environment:
+"python3 -m pip install housing_price-0.3.tar.gz"
+"python3 -m pip install housing_price-0.3-py3-none-any.whl"
+"tar -xvzf housing_price-0.3.tar.gz"
 
-`$ conda env create --file deploy/conda/env.yml`
+# Package Installation [Windows]:
+Run the following commands in the root directory to setup the packages:-
 
-`$ conda activate mle-dev`
+"python -m pip install housing_price-0.3.tar.gz"
+"python -m pip install housing_price-0.3-py3-none-any.whl"
+"tar -xvzf housing_price-0.3.tar.gz"
 
-### Setup:
-For editable install:
-`$ pip install -e .`
+# Data Ingestion:
+"python" [Windows] [Use python3 for Ubuntu instead of python]
+>> from housing_price import ingest_data
+>> ctrl+z
+"python -m housing_price.ingest_data"
 
-For normal install:
-`$ pip install .`
+# Training Model:
+"python" [Windows] [Use python3 for Ubuntu instead of python]
+>> from housing_price import train
+>> ctrl+z
+"python -m housing_price.train"
 
-## Run code:
-### To download and process data:
-`$ python src/housing_price/ingest_data.py -r data/raw/ -p data/processed/`
-### To train the models:
-`$ python src/housing_price/train.py -d data/processed/housing_train.csv -m artifacts/`
-### To score trained models:
-`$ python src/housing_price/score.py -d data/processed/housing_test.csv -m artifacts/`
-### Note:
-You can get information on command line arguments for each of the above scripts using `-h` or `--help`. For example: 
+# Model Validation:
+"python" [Windows] [Use python3 for Ubuntu instead of python]
+>> from housing_price import ingest_data
+>> ctrl+z
+"python -m housing_price.score"
 
-`$ python src/housing_price/train.py --help`
-## Steps performed:
- - We prepared and cleaned the data. 
- - We checked and imputed missing values.
- - Features are generated and the variables are checked for correlation.
- - Multiple sampling techinuqies are evaluated. The data set is split into train and test.
- - All the above said modelling techniques are tried and evaluated. The final metric used to evaluate is mean squared error.
+# Installation Testing:
+To test installation, go to root directory and run the following command:
+"pytest"
